@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Drone Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <style>
+        section {
+            display: none;
+        }
+      /* Add some basic styling for visibility */
+    </style>
+<body>
+
+    <header>
+        <h1>Infinite Drone Studio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('about')">About</a></li>
+            <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" style="display: block;">
+        <h2>Home</h2>
+        <p>This is the home section of your website.</p>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>This is the about section of your website.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>This is the contact section of your website.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Infinite Drone. All rights reserved</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
